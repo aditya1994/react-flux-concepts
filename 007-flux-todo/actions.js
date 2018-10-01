@@ -7,6 +7,12 @@ var TodoActions = Flux.createActions({
           text: text
        }
     },
+
+    removeRecipe: function(text){
+    	return {
+	   actionType: "REMOVE_TODO",
+	}
+    }
     kittenLaunch: function(data){
         return {
             actionType: "KITTEN_LAUNCH",
